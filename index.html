@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <h1 class="title">Basketball Scoreboard</h1>
+    <section class="container">
+        <div class="score-container">
+            <div class="score-box">
+                <h2 class="title-score">HOME</h2>
+                <h3 class="score" id="home-score">0</h3>
+                <div class="button-group">
+                    <button class="button" id="home-plus1" onclick="plus1(id)">+1</button>                
+                    <button class="button" id="home-plus2" onclick="plus2(id)">+2</button>                
+                    <button class="button" id="home-plus3" onclick="plus3(id)">+3</button>
+                </div>
+            </div>
+            <div class="score-box">
+                <h2 class="title-score">GUEST</h2>
+                <h3 class="score" id="guest-score">0</h3>
+                <div class="button-group">
+                    <button class="button" id="guest-plus1" onclick="plus1(id)">+1</button>                
+                    <button class="button" id="guest-plus2" onclick="plus2(id)">+2</button>                
+                    <button class="button" id="guest-plus3" onclick="plus3(id)">+3</button>
+                </div>
+            </div>
+        </div>
+        <button class="save-button" id="save-btn" onclick="saveScore()">SAVE SCORE</button>
+        <div class="quarter-container">
+            <div class="quarter">
+                <h4 class="quarter-title">First quarter</h4>
+                <div class="quarter-score-box">
+                    <div>
+                        <p class="quarter-title">Home</p>
+                        <p class="quarter-score" id="quarter1-home">0</p>
+                    </div>
+                    <div>
+                        <p class="quarter-title">Guest</p>
+                        <p class="quarter-score" id="quarter1-guest">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="quarter">
+                <h4 class="quarter-title">Second quarter</h4>
+                <div class="quarter-score-box">
+                    <div>
+                        <p class="quarter-title">Home</p>
+                        <p class="quarter-score" id="quarter2-home">0</p>
+                    </div>
+                    <div>
+                        <p class="quarter-title">Guest</p>
+                        <p class="quarter-score" id="quarter2-guest">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="quarter">
+                <h4 class="quarter-title">Third quarter</h4>
+                <div class="quarter-score-box">
+                    <div>
+                        <p class="quarter-title">Home</p>
+                        <p class="quarter-score" id="quarter3-home">0</p>
+                    </div>
+                    <div>
+                        <p class="quarter-title">Guest</p>
+                        <p class="quarter-score" id="quarter3-guest">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="quarter">
+                <h4 class="quarter-title">Fourth quarter</h4>
+                <div class="quarter-score-box">
+                    <div>
+                        <p class="quarter-title">Home</p>
+                        <p class="quarter-score" id="quarter4-home">0</p>
+                    </div>
+                    <div>
+                        <p class="quarter-title">Guest</p>
+                        <p class="quarter-score" id="quarter4-guest">0</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <a href="https://github.com/Ferclemens/Scrimba-FrontendCareerPath-MakingWebsitesInteractive-Challenge1" target="_blank" class="repolink">Github Repository</a>
+    <script src="index.js"></script>
+</body>
+</html>
